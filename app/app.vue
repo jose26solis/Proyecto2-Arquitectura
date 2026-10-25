@@ -1,8 +1,6 @@
 <!-- app/app.vue -->
 <script setup>
-// Snipcart se agrega al documento una vez que la aplicación se monta en el navegador.
-// Reemplazar por la API Key pública (modo Test) de su cuenta de Snipcart.
-const SNIPCART_API_KEY = 'REEMPLAZAR_CON_SU_API_KEY_PUBLICA'
+const SNIPCART_API_KEY = 'ZmNkZjhjY2YtM2RhNi00ZTJiLWI1NTUtM2Q0NTUxYWY1ODc5NjM5Mjg0ODU0MTkyMTgxNDIw'
 
 onMounted(() => {
   if (document.getElementById('snipcart')) return
