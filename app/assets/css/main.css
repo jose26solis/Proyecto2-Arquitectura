@@ -1,0 +1,69 @@
+/* Estilo propio: fondo crema, tipografía serif, títulos azul marino y acentos dorados */
+:root {
+  --crema: #fbf7ef;
+  --marino: #1f2d4d;
+  --dorado: #b08a3e;
+  --texto: #333;
+  --borde: #e4dccb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--texto);
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+a { color: var(--marino); }
+a:hover { color: var(--dorado); }
+h1, h2, h3, h4 { color: var(--marino); font-weight: 600; line-height: 1.25; }
+.contenedor { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+header.sitio { border-bottom: 3px double var(--dorado); padding: 20px 0 10px; }
+header.sitio .marca { font-size: 30px; color: var(--marino); text-decoration: none; font-weight: 600; }
+header.sitio .lema { margin: 0; font-style: italic; color: #777; }
+nav.principal { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+nav.principal a { text-decoration: none; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+nav.principal a.router-link-active { color: var(--dorado); }
+.enlace-carrito { margin-left: auto; background: none; border: 1px solid var(--marino); color: var(--marino);
+  font-family: inherit; font-size: 14px; padding: 6px 14px; cursor: pointer; }
+.enlace-carrito:hover { background: var(--marino); color: #fff; }
+
+footer.sitio { border-top: 1px solid var(--borde); margin-top: 50px; padding: 15px 0 30px; font-size: 14px; color: #888; text-align: center; }
+
+.migas { font-size: 14px; color: #888; margin: 18px 0 0; }
+ul.lista-libros { list-style: none; padding: 0; }
+ul.lista-libros li { display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--borde); }
+ul.lista-libros img { width: 90px; height: auto; box-shadow: 2px 2px 6px rgba(0,0,0,.2); }
+ul.lista-libros .info { flex: 1; }
+ul.lista-libros h3 { margin: 0 0 4px; font-size: 20px; }
+.autor { font-style: italic; color: #666; margin: 0 0 6px; }
+.precio { color: var(--dorado); font-weight: 600; font-size: 19px; }
+
+.boton {
+  background: var(--marino); color: #fff; border: none; padding: 8px 16px;
+  font-family: inherit; font-size: 15px; cursor: pointer;
+}
+.boton:hover { background: var(--dorado); }
+.boton:disabled { background: #bbb; cursor: default; }
+.boton-secundario { background: none; color: var(--marino); border: 1px solid var(--marino); }
+.boton-secundario:hover { background: var(--marino); color: #fff; }
+
+.paginacion { display: flex; align-items: center; gap: 14px; margin: 20px 0; }
+
+.detalle { display: flex; gap: 32px; margin-top: 10px; }
+.detalle img { width: 240px; height: auto; box-shadow: 3px 3px 10px rgba(0,0,0,.25); }
+.detalle dl { display: grid; grid-template-columns: 110px 1fr; gap: 4px 10px; }
+.detalle dt { font-weight: 600; color: var(--marino); }
+.detalle dd { margin: 0; }
+.vecinos { display: flex; justify-content: space-between; margin: 30px 0; font-size: 15px; }
+
+.form-busqueda { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; }
+.form-busqueda input, .form-busqueda select { font-family: inherit; font-size: 16px; padding: 7px 10px; border: 1px solid var(--borde); background: #fff; }
+.form-busqueda input { flex: 1; min-width: 200px; }
+
+@media (max-width: 640px) {
+  .detalle { flex-direction: column; }
+  .enlace-carrito { margin-left: 0; }
+}

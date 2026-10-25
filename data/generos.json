@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "novela",
+    "nombre": "Novela",
+    "descripcion": "Clásicos y novelas contemporáneas de la literatura universal."
+  },
+  {
+    "slug": "latinoamericana",
+    "nombre": "Literatura latinoamericana",
+    "descripcion": "Autores de América Latina, incluyendo grandes obras costarricenses."
+  },
+  {
+    "slug": "ciencia-ficcion",
+    "nombre": "Ciencia ficción",
+    "descripcion": "Futuros posibles, viajes espaciales y sociedades distópicas."
+  },
+  {
+    "slug": "fantasia",
+    "nombre": "Fantasía",
+    "descripcion": "Mundos mágicos, criaturas legendarias y grandes aventuras."
+  },
+  {
+    "slug": "misterio",
+    "nombre": "Misterio y suspenso",
+    "descripcion": "Detectives, crímenes por resolver y tramas llenas de tensión."
+  },
+  {
+    "slug": "divulgacion",
+    "nombre": "Divulgación e historia",
+    "descripcion": "Ciencia, historia y pensamiento explicados para todo público."
+  }
+]
